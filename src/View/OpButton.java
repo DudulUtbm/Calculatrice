@@ -9,6 +9,7 @@ public class OpButton extends JButton{
 
 	public OpButton(String str,Application app){
 		super(str);
+		this.setName(str);
 		this.addActionListener(new CalculListener(app));
 	}
 	
