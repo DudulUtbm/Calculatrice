@@ -6,11 +6,13 @@ import View.*;
 public class Application {
 	
 	private Window win;
+	private Calcul calc;
 	
 	
 	public Application(){
 		
-		win = new Window();
+		win = new Window(this);
+		calc = new Calcul();
 		
 	}
 
@@ -19,4 +21,20 @@ public class Application {
 	Application app=new Application();
 	}
 
+	public void add(){
+		calc.add();
+	}
+	
+	public void sub(){
+		calc.add();
+	}
+	
+	public void mul(){
+		calc.add();
+	}
+	
+	public void div(){
+		calc.add();
+	}
 }
+
